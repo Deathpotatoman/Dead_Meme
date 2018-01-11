@@ -2,4 +2,12 @@
 comment0.target=Dead_Meme
 comment1.params=
 comment1.target=void\ upgradePrice()
-numComments=2
+comment2.params=a
+comment2.target=double\ Purchase(double)
+comment3.params=a
+comment3.target=double\ Purchase10(double)
+comment4.params=a
+comment4.target=double\ Purchase100(double)
+comment5.params=a
+comment5.target=double\ MaxPurchase(double)
+numComments=6

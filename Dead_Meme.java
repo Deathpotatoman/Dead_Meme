@@ -1,4 +1,4 @@
-import math.java;
+import java.awt.*;
 import javax.swing.*;
 public class Dead_Meme extends JFrame
     {
@@ -8,7 +8,50 @@ public class Dead_Meme extends JFrame
     protected double price;//tracks price of each generator
     void upgradePrice()
         {
-        price=round(price*total*1.15);
+        price=Math.round(price*total*1.15);
         }
-        
+    double Purchase(double a)
+        {    
+        if (a >=price)
+            {
+            a-=price;
+            total+=1;
+            upgradePrice();
+            }
+        return a; 
+        }
+    double Purchase10(double a)
+        {
+        if  (a >=Math.round(price*20.303718238))
+            {
+            a-=Math.round(price*20.303718238);
+            total+=10;
+            upgradePrice();
+            }
+        return a; 
+        }    
+    double Purchase100(double a)
+        {
+        if (a >=Math.round(price*7878749.671335188))    
+            {
+            a-=Math.round(price*7878749.671335188);
+            total+=100;
+            upgradePrice();
+            }
+        return a; 
+        }    
+    double MaxPurchase(double a)
+        {
+        if(a>=price)
+            {
+            total+=1;
+            upgradePrice();
+            MaxPurchase(a-price);
+            }
+        else
+            {
+            return a;
+            }
+        return a;    
+        }
     }
