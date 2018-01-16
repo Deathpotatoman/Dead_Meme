@@ -10,4 +10,6 @@ comment4.params=a
 comment4.target=double\ Purchase100(double)
 comment5.params=a
 comment5.target=double\ MaxPurchase(double)
-numComments=6
+comment6.params=
+comment6.target=java.lang.String\ ToString()
+numComments=7
