@@ -2,7 +2,10 @@ import java.awt.*;
 import javax.swing.*;
 public class Dead_Meme extends JFrame
     {
-    protected String Name;
+    private final long serialVersionUID = 1L;
+    protected JFrame MainJF;
+    protected JPanel MainJP;
+    protected String name;
     protected double multiplier;//this double is the multiplier for dead meme generators
     protected double create;//this double tracks how much each dead meme generates
     protected int total;//this tracks how many of each generator is
@@ -58,6 +61,32 @@ public class Dead_Meme extends JFrame
         }
     String ToString()
         {
-            return "You have "+ Math.round(total) + " "+Name + " creating " + Math.round(create)+ " per second";
+            return "You have "+ Math.round(total) + " "+name + " creating " + Math.round(create)+ " per second";
         }
+    public Dead_Meme()
+   {   
+        //Schedule a job for the event-dispatching thread:
+        //creating and showing this application's GUI.
+        javax.swing.SwingUtilities.invokeLater(new Runnable() 
+        {
+            public void run() {
+                createAndShowGUI();
+            }
+        });
+    }
+   private  void createAndShowGUI() {
+       /*
+       MainJF = new JFrame();
+       MainJF.setExtendedState(JFrame.MAXIMIZED_BOTH); 
+       MainJF.setUndecorated(true);
+       MainJF.setVisible(true);
+       MainJF.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+       */
+       MainJP = new JPanel();
+       setSize(1600,1000);
+       setDefaultCloseOperation(EXIT_ON_CLOSE);
+       add(MainJP);
+       setVisible(true);
+    }    
+       
     }
