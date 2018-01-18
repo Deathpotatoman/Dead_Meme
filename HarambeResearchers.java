@@ -13,21 +13,23 @@ import javax.swing.*;
 public class HarambeResearchers extends Dead_Meme
 {
     //Instance variables for HarambeResearchers
-    private JButton ClickerJButton;
+    private JButton button1;
     public HarambeResearchers()
     {
-        //super();
-        JButton button1 = new JButton();
-        button1.setBounds(60,60,60,60);
+        super();
+        button1 = new JButton();
+        System.out.println(MainJP);
         button1.setText("Harambe Researchers");
         button1.setPreferredSize(new Dimension (200,60));
         // add buttons to frame
         MainJP.add(button1);
+        
         total=0;
         multiplier = 1;
         price = 100;
         create = 1;
         name = "Harambe Researchers";
+        
     }
 
 }

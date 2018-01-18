@@ -1,10 +1,12 @@
 import java.awt.*;
+import java.awt.event.*;
 import javax.swing.*;
 public class Dead_Meme extends JFrame
     {
     private final long serialVersionUID = 1L;
     protected JFrame MainJF;
     protected JPanel MainJP;
+    Container contentPane;
     protected String name;
     protected double multiplier;//this double is the multiplier for dead meme generators
     protected double create;//this double tracks how much each dead meme generates
@@ -74,7 +76,7 @@ public class Dead_Meme extends JFrame
             }
         });
     }
-   private  void createAndShowGUI() {
+   private void createAndShowGUI() {
        /*
        MainJF = new JFrame();
        MainJF.setExtendedState(JFrame.MAXIMIZED_BOTH); 
@@ -82,10 +84,12 @@ public class Dead_Meme extends JFrame
        MainJF.setVisible(true);
        MainJF.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
        */
+      
        MainJP = new JPanel();
        setSize(1600,1000);
        setDefaultCloseOperation(EXIT_ON_CLOSE);
        add(MainJP);
+      // contentPane.add(MainJP);
        setVisible(true);
     }    
        
