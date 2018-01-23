@@ -1,7 +1,7 @@
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-public class Dead_Meme extends JFrame
+public class Dead_Meme extends JFrame //implements ActionListener
     {
     private final long serialVersionUID = 1L;
     protected JFrame MainJF;
@@ -77,13 +77,7 @@ public class Dead_Meme extends JFrame
         });
     }
    private void createAndShowGUI() {
-       /*
-       MainJF = new JFrame();
-       MainJF.setExtendedState(JFrame.MAXIMIZED_BOTH); 
-       MainJF.setUndecorated(true);
-       MainJF.setVisible(true);
-       MainJF.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-       */
+      
       
        MainJP = new JPanel();
        setSize(1600,1000);

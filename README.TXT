@@ -4,9 +4,8 @@ Tell the reader (someone who does not know anything about this project)
 all he/she needs to know. The comments should usually include at least:
 ------------------------------------------------------------------------
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
-USER INSTRUCTIONS:
+PROJECT TITLE: Dead Meme Clicker
+PURPOSE OF PROJECT: To create a clicker game in which the player clicks on a clicker to obtain dead memes which are put into other things
+to increase dead meme production
+AUTHORS: Andy Grandea, Ray LeMonds
+

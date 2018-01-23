@@ -10,10 +10,11 @@ import java.awt.event.*;
 import javax.swing.*;
 
 //Extend to dead_meme class
-public class HarambeResearchers extends Dead_Meme
+public class HarambeResearchers extends Dead_Meme 
 {
     //Instance variables for HarambeResearchers
     private JButton button1;
+    private JButton button2;
     public HarambeResearchers()
     {
         super();
@@ -29,7 +30,12 @@ public class HarambeResearchers extends Dead_Meme
         price = 100;
         create = 1;
         name = "Harambe Researchers";
-        
+          button2 = new JButton();
+          //  button1.setBounds(60,100,60,100);
+            System.out.println(MainJP);
+            button2.setText("Clicker");
+            button2.setPreferredSize(new Dimension (200,60));
+            MainJP.add(button2);
     }
 
 }
